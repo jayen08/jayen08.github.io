@@ -8,40 +8,53 @@
 </head>
 
 <body>
-    <img src="indomart.jpg"
-    alt="Foto saya"
-    width="280"
-    <img src="pohon.jpg"
-    alt="Foto saya"
-    width="280"
-    <img src="yamal.jpg"
-    alt="Fotosaya"
-    width="280"
- <p>
-   
-<div class="menu">
-  <a href="index.html">Kembali ke menu utama</a>
-  <a href="foto.html">Lihat foto</a>
-</div>
+  <h2>FOTO SAYA</h2>
+  <a href="index.html">kembali ke menu utama</a>
+</body>
 
 <style>
-.menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
+  .galeri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-.menu a:first-child {
-  text-align: left;
+.galeri img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-.menu a:last-child {
-  text-align: center;
-  position: relative;
-  top: -149px;
+.link-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.link-foto a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
 }
 </style>
 
- </p> 
-</body>
-</html>
+<div class="galeri">
+
+    <img src="indomart.jpg" alt="Foto 1">
+
+    <img src="yamal.jpg" alt="Foto 2">
+
+    <img src="pohon.jpg" alt="Foto 3">
+
+    <div class="link-foto">
+        <a href="https://www.instagram.com/p/DL-OaevBVtwMl0oF0B1NFhuWDf0VtfoCRW8l8g0/?psln=cGpyenVhYWo0cDV2"
+           target="_blank">
+            Lihat Foto
+        </a>
+    </div>
+
+</div>
